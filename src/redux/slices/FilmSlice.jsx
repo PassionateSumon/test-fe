@@ -17,7 +17,7 @@ const initialState = {
     error: null
 }
 
-const BASE_URL = "http://localhost:3030"
+const BASE_URL = "http://13.234.31.135:3030"
 
 export const getListOfAllFilmsWithPagination = createAsyncThunk("/all/films", async ({ page, limit = 10, fData }, { rejectWithValue }) => {
     try {
